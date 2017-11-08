@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .log{
+      background-color: black;
+      color: #ffffff;
+      padding:10px 20px;
+    }
+  </style>
+</head>
+<body>
+<h2>ES6demo演示</h2>
+<div id="log" class="log"></div>
+
+<script>
+
+  var str =`
+  console.log('a'+a);
+  var a=1;
+  console.log('b'+b);
+  let b=2;
+  `;
+  printLog(str);  //输出模板语言
+
+  var [a,b]=[3,5,8];
+
+
+  function printLog(str) {
+    document.getElementById('log').innerText=str;
+
+  }
+</script>
+</body>
+</html>
